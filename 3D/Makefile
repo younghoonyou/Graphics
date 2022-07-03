@@ -1,6 +1,6 @@
 CC = g++#compiler
 
-CXXFLAGS =  -std=c++11 -Wall#compile option for C++ Wall(complie warning) 02(optimize level 2)
+CXXFLAGS =  -std=c++11 -Wall -lncurses#compile option for C++ Wall(complie warning) 02(optimize level 2)
 
 TARGET = test
 

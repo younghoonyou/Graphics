@@ -2,15 +2,8 @@
 #define __FIGURE_H_
 #include <vector>
 #include <iostream>
-struct flat{
-    double x, y;
-    flat(){
-        x = 0;
-        y = 0;
-    }
-};
-struct Point
-{
+
+struct Point{
     double x, y,z;
     Point(){
         x = 0;
@@ -36,22 +29,17 @@ struct Point
     void X_Rotate(int degree);
     void Y_Rotate(int degree);
     void Z_Rotate(int degree);
-    void Projection();
+    Point Projection();
 };
-struct Line
-{
+
+struct Line{
     Point p1, p2;
+    Line(){
+    }
     Line(Point p1_,Point p2_){
-        // if(p1_.x > p2_.x){
-        //     p2 = p1_;
-        //     p1 = p2_;
-        // }
-        // else{
             p1 = p1_;
             p2 = p2_;
-            // }
     }
     void Draw(std::vector<std::vector<char> >& m);
-    // std::vector<flat> Projection();
 };
 #endif
