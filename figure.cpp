@@ -2,7 +2,7 @@
 #include <cmath>
 #define MIN(a,b) ((a<b)?a:b)
 
-int XPLUS = 40;//To locate square to center
+int XPLUS = 45;//To locate square to center
 int YPLUS = 25;//To locate square to center
 
 void Point::Z_Rotate(int degree){
@@ -63,8 +63,8 @@ void Point::X_Rotate(int degree){
 
     Point Point::Projection(){//Orthogonal projection
         double matrix[4][4] = {
-            {1, 0, 1, 0},  // w
-            {0, 1, 1, 0},  // h
+            {1, 0, 0, 0},  // w
+            {0, 1, 0, 0},  // h
             {0, 0, 1, 1},  // a
             {0, 0, -1, 0}, // b
         };
