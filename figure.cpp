@@ -63,8 +63,8 @@ void Point::X_Rotate(int degree){
 
     Point Point::Projection(){//Orthogonal projection
         double matrix[4][4] = {
-            {1, 0, 0, 0},  // w
-            {0, 1, 0, 0},  // h
+            {1.2, 0, 1, 0},  // w scaling 1.2 camera width scale 1
+            {0, 1.2, 1, 0},  // h scaling 1.2 camera height scale 1
             {0, 0, 1, 1},  // a
             {0, 0, -1, 0}, // b
         };
